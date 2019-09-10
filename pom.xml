@@ -129,6 +129,7 @@
                 </configuration>
             </plugin>
 
+            <!--Во время сборки не искать конфиг в XML, использовать класс конфига-->
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.2.2</version>
