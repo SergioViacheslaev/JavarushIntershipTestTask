@@ -2,6 +2,7 @@ package com.space.repository;
 
 import com.space.model.Ship;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -22,5 +23,5 @@ import org.springframework.stereotype.Repository;
  * @author Sergei Viacheslaev
  */
 @Repository
-public interface ShipRepository extends JpaRepository<Ship, Long> {
+public interface ShipRepository extends JpaRepository<Ship, Long>, JpaSpecificationExecutor<Ship> {
 }
